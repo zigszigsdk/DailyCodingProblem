@@ -1,0 +1,4 @@
+﻿Analysis:
+ AllocationReuse is allround most efficient.
+ Recursion is much easier to read and modify, though being recursion it breaks with enough depth.
+ Bruteforce loop doesn't generate garbage

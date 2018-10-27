@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2016
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DailyCodingProblem", "DailyCodingProblem\DailyCodingProblem.csproj", "{5E2CC633-F21E-43F9-8874-27FA855041ED}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DailyCodingProblem.Tests", "DailyCodingProblem.Tests\DailyCodingProblem.Tests.csproj", "{FEB5A440-7D48-4FAC-9017-6E7C6F3432A4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E2CC633-F21E-43F9-8874-27FA855041ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E2CC633-F21E-43F9-8874-27FA855041ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E2CC633-F21E-43F9-8874-27FA855041ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E2CC633-F21E-43F9-8874-27FA855041ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEB5A440-7D48-4FAC-9017-6E7C6F3432A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEB5A440-7D48-4FAC-9017-6E7C6F3432A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEB5A440-7D48-4FAC-9017-6E7C6F3432A4}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEB5A440-7D48-4FAC-9017-6E7C6F3432A4}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D707C7D8-417F-4058-BA92-7B2EDA824BBB}
+	EndGlobalSection
+EndGlobal

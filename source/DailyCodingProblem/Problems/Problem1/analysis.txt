@@ -1,0 +1,4 @@
+﻿Analysis
+ BoolArrayHashset is the better allrounder.
+ Though the Bruteforce solution doesn't use additional memory.
+ System.Collections.Generic.HashSet is never worthwhile given the current problem-space.
