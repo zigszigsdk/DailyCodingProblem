@@ -28,8 +28,8 @@ namespace DailyCodingProblem.Tests.Problems.Problem3.Solutions
             var sameB = new JsonStringSolution("root", new JsonStringSolution("left", new JsonStringSolution("left.left")), new JsonStringSolution("right"));
             var differ = new JsonStringSolution("root", new JsonStringSolution("læft", new JsonStringSolution("left left")), new JsonStringSolution("right"));
 
-            HashSet<JsonStringSolution> hhh = new HashSet<JsonStringSolution>();
-            hhh.Add(sameA);
+            HashSet<JsonStringSolution> hashSet = new HashSet<JsonStringSolution>();
+            hashSet.Add(sameA);
 
             Assert.True(sameA.Equals(sameA));
             Assert.True(sameA.Equals(sameB));
@@ -39,9 +39,9 @@ namespace DailyCodingProblem.Tests.Problems.Problem3.Solutions
             Assert.True(sameA == sameB);
             Assert.False(sameA == differ);
 
-            Assert.Contains(sameA, hhh);
-            Assert.Contains(sameB, hhh);
-            Assert.DoesNotContain(differ, hhh);
+            Assert.Contains(sameA, hashSet);
+            Assert.Contains(sameB, hashSet);
+            Assert.DoesNotContain(differ, hashSet);
 
         }
 
