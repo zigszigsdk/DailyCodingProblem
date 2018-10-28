@@ -1,8 +1,10 @@
 ﻿using System.Collections.Generic;
 
+using DailyCodingProblem.Shared;
+
 namespace DailyCodingProblem.Problems.Problem3.Solutions
 {
-    public class SExpsSolution : Node<SExpsSolution>
+    public class SExpsSolution : BinaryTreeNode<SExpsSolution>
     {
         public static SExpsSolution Deserialize(string serialized)
             =>  serialized.Trim().Length == 0 
@@ -11,11 +13,8 @@ namespace DailyCodingProblem.Problems.Problem3.Solutions
                         new Stack<string>(
                             serialized.Trim().Split(' ')));
 
-        public static SExpsSolution CreateFrom<T>(Node<T> copyFrom) where T : Node<T>
-            => new SExpsSolution(
-                    copyFrom.value
-                , copyFrom.left == null ? null : CreateFrom(copyFrom.left)
-                , copyFrom.right == null ? null : CreateFrom(copyFrom.right));
+        public SExpsSolution() : base("") { }
+
 
         public SExpsSolution(string value, SExpsSolution left = null, SExpsSolution right = null)
             : base(value, left, right) { }
@@ -51,7 +50,7 @@ namespace DailyCodingProblem.Problems.Problem3.Solutions
                 right = new SExpsSolution(from);
         }
 
-        public string Serialize()
+        override public string Serialize()
             =>  (right != null ? right.Serialize() : "null") + " "
             +   (left  != null ? left.Serialize()  : "null") + " "
             +   value;

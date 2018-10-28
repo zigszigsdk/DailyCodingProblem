@@ -1,4 +1,5 @@
 ﻿using BenchmarkDotNet.Attributes;
+using DailyCodingProblem.Shared;
 using DailyCodingProblem.Problems.Problem3.Solutions;
 
 namespace DailyCodingProblem.Problems.Problem3
@@ -38,8 +39,9 @@ namespace DailyCodingProblem.Problems.Problem3
                 case Testcase.depth10: root = generateDepth(10); break;
                 case Testcase.depth15: root = generateDepth(15); break;
             }
-            jsonString = JsonStringSolution.CreateFrom(root);
-            sExps = SExpsSolution.CreateFrom(root);
+
+            jsonString = BinaryTreeNode<JsonStringSolution>.CreateFrom<JsonStringSolution, JsonStringSolution>(root);
+            sExps = BinaryTreeNode<SExpsSolution>.CreateFrom<JsonStringSolution, SExpsSolution>(root);
         }
 
         private JsonStringSolution generateDepth(byte depthTarget)
