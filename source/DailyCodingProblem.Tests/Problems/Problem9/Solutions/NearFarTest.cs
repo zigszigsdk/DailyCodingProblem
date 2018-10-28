@@ -1,7 +1,7 @@
 ﻿using Xunit;
 
 using DailyCodingProblem.Problems.Problem9;
-using DailyCodingProblem.Problems.Problem9.Solution;
+using DailyCodingProblem.Problems.Problem9.Solutions;
 
 namespace DailyCodingProblem.Tests.Problems.Problem9.Solutions
 {

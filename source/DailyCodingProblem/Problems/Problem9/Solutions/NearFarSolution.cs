@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DailyCodingProblem.Problems.Problem9.Solution
+namespace DailyCodingProblem.Problems.Problem9.Solutions
 {
     public class NearFarSolution : ISolution
     {
