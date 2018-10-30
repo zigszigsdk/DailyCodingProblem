@@ -4,8 +4,11 @@ using DailyCodingProblem.Problems.Problem1.Solutions;
 namespace DailyCodingProblem.Problems.Problem1
 {
     [MemoryDiagnoser, RankColumn]
-    public class Benchmark
+    public class Benchmark : IBenchmark
     {
+        public string printBefore() => "";
+        public string printAfter() => "";
+
         [Params(1,2,3)]
         public byte testNumber;
 

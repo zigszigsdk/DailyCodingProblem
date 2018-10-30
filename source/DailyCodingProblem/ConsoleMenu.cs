@@ -66,7 +66,11 @@ namespace DailyCodingProblem
                             TryPrint(@".\Problems\Problem" + selectedProblem + @"\problem.txt");
                             break;
                         case "b":
-                            var a = BenchmarkRunner.Run(benchmarkedProblems[selectedProblem - 1]);
+                            Type type = benchmarkedProblems[selectedProblem - 1];
+                            IBenchmark benchmark = (IBenchmark)Activator.CreateInstance(type);
+                            Console.WriteLine(benchmark.printBefore());
+                            BenchmarkRunner.Run(type);
+                            Console.WriteLine(benchmark.printAfter());
                             break;
                     }
                 }

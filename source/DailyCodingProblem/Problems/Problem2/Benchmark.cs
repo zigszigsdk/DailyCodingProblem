@@ -5,8 +5,11 @@ using DailyCodingProblem.Problems.Problem2.Solutions;
 namespace DailyCodingProblem.Problems.Problem2
 {
     [MemoryDiagnoser]
-    public class Benchmark
+    public class Benchmark : IBenchmark
     {
+        public string printBefore() => "";
+        public string printAfter() => "";
+
         // !20 and above won't fit in an ulong, though it can still run and overflow.
         [Params(3, 19, 5000, 20000)]
         public ushort NumberOfNumbersInInput;

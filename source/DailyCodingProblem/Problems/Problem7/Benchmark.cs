@@ -5,8 +5,11 @@ using DailyCodingProblem.Problems.Problem7.Solutions;
 namespace DailyCodingProblem.Problems.Problem7
 {
     [MemoryDiagnoser]
-    public class Benchmark
+    public class Benchmark : IBenchmark
     {
+        public string printBefore() => "";
+        public string printAfter() => "";
+
         [Params(3, 6, 9, 12, 15, 18, 21, 24, 27, 30)]
         public int inputLength;
         string input;

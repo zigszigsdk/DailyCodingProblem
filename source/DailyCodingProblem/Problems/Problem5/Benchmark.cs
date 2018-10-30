@@ -10,8 +10,11 @@ namespace DailyCodingProblem.Problems.Problem5
     using Cdr =  Func<Func<Func<int, int, int>, int>, int>;
     
     [MemoryDiagnoser]
-    public class Benchmark
+    public class Benchmark : IBenchmark
     {
+        public string printBefore() => "";
+        public string printAfter() => "";
+
         Pair pair = Problem.cons(3, 4);
 
         Car car = new Solution().car;

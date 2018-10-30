@@ -7,8 +7,11 @@ namespace DailyCodingProblem.Problems.Problem3
     public enum Testcase { givenValues, depth5, depth10, depth15 }
 
     [MemoryDiagnoser]
-    public class Benchmark
+    public class Benchmark : IBenchmark
     {
+        public string printBefore() => "";
+        public string printAfter() => "";
+
         [Params(Testcase.givenValues, Testcase.depth5, Testcase.depth10, Testcase.depth15)]
         public Testcase testcase;
 
