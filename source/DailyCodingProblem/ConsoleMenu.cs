@@ -13,7 +13,7 @@ namespace DailyCodingProblem
         {
             for (ushort problemNumber = 1; true; problemNumber++)
             {
-                Type candidate = Type.GetType("DailyCodingProblem.Problems.Problem" +problemNumber+".Benchmark");
+                Type candidate = Type.GetType("DailyCodingProblem.Problems.Problem" +problemNumber.ToString().PadLeft(5, '0') + ".Benchmark");
 
                 if (candidate == null)
                     break;
@@ -63,7 +63,7 @@ namespace DailyCodingProblem
                     switch (input)
                     {
                         case "p":
-                            TryPrint(@".\Problems\Problem" + selectedProblem + @"\problem.txt");
+                            TryPrint(@".\Problems\Problem" + selectedProblem.ToString().PadLeft(5, '0') + @"\problem.txt");
                             break;
                         case "b":
                             Type type = benchmarkedProblems[selectedProblem - 1];

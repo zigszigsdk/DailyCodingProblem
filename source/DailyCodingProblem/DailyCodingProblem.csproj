@@ -20,40 +20,40 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Problems\Problem10\problem.txt">
+    <None Update="Problems\Problem00010\problem.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Problems\Problem1\analysis.txt">
+    <None Update="Problems\Problem00001\analysis.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Problems\Problem1\problem.txt">
+    <None Update="Problems\Problem00001\problem.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Problems\Problem2\analysis.txt">
+    <None Update="Problems\Problem00002\analysis.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Problems\Problem2\problem.txt">
+    <None Update="Problems\Problem00002\problem.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Problems\Problem3\problem.txt">
+    <None Update="Problems\Problem00003\problem.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Problems\Problem4\problem.txt">
+    <None Update="Problems\Problem00004\problem.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Problems\Problem5\problem.txt">
+    <None Update="Problems\Problem00005\problem.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Problems\Problem6\problem.txt">
+    <None Update="Problems\Problem00006\problem.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Problems\Problem7\problem.txt">
+    <None Update="Problems\Problem00007\problem.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Problems\Problem8\problem.txt">
+    <None Update="Problems\Problem00008\problem.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Problems\Problem9\problem.txt">
+    <None Update="Problems\Problem00009\problem.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
