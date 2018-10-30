@@ -9,7 +9,7 @@ namespace DailyCodingProblem.Tests.Problems.Problem10
     class Tests
     {
         int sleepInterval = 100;
-        float margin = 0.05f;
+        int margin = 100;
 
         public void SingleCallback(ISolution solution)
         {
@@ -22,8 +22,8 @@ namespace DailyCodingProblem.Tests.Problems.Problem10
             while (to == DateTime.MinValue)
                 Thread.Sleep(sleepInterval);
 
-            Assert.True(to.Subtract(from).TotalMilliseconds <= callbackIn * (1 + margin));
-            Assert.True(to.Subtract(from).TotalMilliseconds >= callbackIn * (1 - margin));
+            Assert.True(to.Subtract(from).TotalMilliseconds <= callbackIn + margin);
+            Assert.True(to.Subtract(from).TotalMilliseconds >= callbackIn);
         }
 
         public void OverlappingCallbacks(ISolution solution)
@@ -46,8 +46,8 @@ namespace DailyCodingProblem.Tests.Problems.Problem10
                 while (to[index] == DateTime.MinValue)
                     Thread.Sleep(sleepInterval);
 
-                Assert.True(to[index].Subtract(from[index]).TotalMilliseconds <= callbackIn * (1 + margin));
-                Assert.True(to[index].Subtract(from[index]).TotalMilliseconds >= callbackIn * (1 - margin));
+                Assert.True(to[index].Subtract(from[index]).TotalMilliseconds <= callbackIn + margin);
+                Assert.True(to[index].Subtract(from[index]).TotalMilliseconds >= callbackIn);
             }
         }
 
