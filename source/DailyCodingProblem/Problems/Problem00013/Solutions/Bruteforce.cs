@@ -9,22 +9,35 @@ namespace DailyCodingProblem.Problems.Problem00013.Solutions
             if (subject == null || subject.Length == 0 || maxChars <= 0)
                 return 0;
 
+            for (int index = subject.Length - 1; index >= 0; index--)
+                if (subject[index] < 'a' || subject[index] > 'z')
+                    return 0;
+
             if (maxChars >= subject.Length)
                 return subject.Length;
 
             int result = maxChars;
 
-            HashSet<char> seen;
+            bool[] seenChars;
+            int seenCount;
             int next;
-            bool roomForNextChar() => seen.Count != maxChars || seen.Contains(subject[next]);
+            bool roomForNextChar() => seenCount != maxChars || seenChars[subject[next]-'a'];
 
             for (int start = subject.Length - 1 - maxChars; start >= 0; start--)
             {
-                seen = new HashSet<char>();
+                seenCount = 0;
+                seenChars = new bool[25];
+                for (int index = 24; index >= 0; index--)
+                    seenChars[index] = false;
 
                 for (next = start; next < subject.Length && roomForNextChar(); next++)
-                    seen.Add(subject[next]);
-
+                {
+                    if (seenChars[subject[next]-'a'] == false)
+                    {
+                        seenCount++;
+                        seenChars[subject[next]-'a'] = true;
+                    }
+                }
                 if (next - start > result)
                     result = next - start;
             }
