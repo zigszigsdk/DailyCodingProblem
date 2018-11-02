@@ -10,7 +10,7 @@ namespace DailyCodingProblem.Problems.Problem00013
         public string printBefore() => "";
         public string printAfter() => "";
 
-        [Params(10, 20, 30, 40, 50)]
+        [Params(10, 20, 30, 40, 50, 60, 70, 80, 90, 100)]
         public int stringLength;
 
         string input;
