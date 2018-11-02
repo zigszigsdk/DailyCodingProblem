@@ -19,8 +19,12 @@ namespace DailyCodingProblem.Problems.Problem00013
         public void GlobalSetup() => input = new string('a', stringLength);
 
         ISolution bruteforce = new Bruteforce();
+        ISolution snake = new Snake();
 
         [Benchmark]
         public int Bruteforce() => bruteforce.Solve(3, input);
+
+        [Benchmark]
+        public int Snake() => snake.Solve(3, input);
     }
 }
